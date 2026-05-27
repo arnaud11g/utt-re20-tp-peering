@@ -40,6 +40,8 @@ Chaque binôme aura à gérer une mini-infrastructure composée d'un routeur et 
 
 Un autre couple routeur-switch servira à simuler l'IXP : le switch servira à faire la mise en réseau de l'ensemble des routeurs utilisés pendant le TP et le routeur servira de "route-server".
 
+![infra globale](images/re20_tp_peering_infra-globale.png)
+
 
 ## ASN et préfixes IP par binôme 
 
@@ -70,6 +72,8 @@ Ceux-ci sont utilisés ici uniquement dans un contexte d'enseignement et dans un
 
 Dans la première partie du TP, vous allez devoir réaliser la configuration initiale de vos équipements ainsi que l'interconnexion entre les deux. 
 
+![infra interne](images/re20_tp_peering_infra-interne.png)
+
 Dans un premier temps, câblez le port `GigabitEthernet0/0/1` de votre routeur vers le port `GigabitEthernet1/0/1` de votre switch.  
 
 Afin d'aller vite pour se concentrer sur la partie peering, prenez les templates `c8200_initial_config_{id}.cfg` et `c9300_initial_config_{id}.cfg` disponibles dans le dossier portant le nom de l'acteur d'Internet qui vous a été assigné (clique ici : [Configuration files](configuration_files/)) et appliquez-les sur les équipements.
@@ -90,9 +94,11 @@ Ensuite, nous allons ajouter deux autres interfaces "Loopback" qui serviront à 
 
 ### Partie 2 - Peering via route-server 
 
-Maintenant que votre infrastructure est prête, il est l'heure de faire du **peering**.
+Maintenant que votre infrastructure interne est prête, il est l'heure de faire du **peering**.
 
-Au cours de cette partie, vous allez commencer par faire du peering sur le point d'échange Internet simulé de manière classique, via le route-server. Ainsi, via une seule session BGP (enfin, deux plus exactement car nous faisons à la fois de l'IPv4 et de l'IPv6), nous obtenons des routes de tous les autres réseaux aussi connectés au route-server.
+Avant toute chose, vous allez câbler et configurer l'interface physique pour vous connecter au switch représentant le point d'échange Internet avec le template `c8200_peering_interface_config{id}.cfg`. (Pour le câblage sur le switch, prenez le numéro de port correspondant à votre ID).
+
+Vous allez commencer par faire du peering sur le point d'échange Internet simulé via le route-server. Ainsi, via une seule session BGP (enfin, deux plus exactement car nous faisons à la fois de l'IPv4 et de l'IPv6), nous obtenons des routes de tous les autres réseaux aussi connectés au route-server.
 
 Pour faire cela, vous allez utiliser le template `c8200_ebgp_rs_config_{id}.cfg`. 
 
