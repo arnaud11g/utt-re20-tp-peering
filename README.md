@@ -209,11 +209,11 @@ python config_generator.py
 
 ### Ressources
 
-https://www.cisco.com/c/en/us/support/ios-nx-os-software/ios-xe-17/products-installation-and-configuration-guides-list.html
-https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irs-ovrvw-cf.html
-https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-route-server.html 
-https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-external-sp-0.html
+* https://www.cisco.com/c/en/us/support/ios-nx-os-software/ios-xe-17/products-installation-and-configuration-guides-list.html
+* https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irs-ovrvw-cf.html
+* https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-route-server.html 
+* https://www.cisco.com/c/en/us/td/docs/routers/ios/config/17-x/ip-routing/b-ip-routing/m_irg-external-sp-0.html
 
-https://blog.stephane-robert.info/docs/developper/programmation/python/jinja/#utilisation-des-templates-dans-le-code-python
-https://jinja.palletsprojects.com/en/stable/templates/ 
+* https://blog.stephane-robert.info/docs/developper/programmation/python/jinja/#utilisation-des-templates-dans-le-code-python
+* https://jinja.palletsprojects.com/en/stable/templates/ 
 
