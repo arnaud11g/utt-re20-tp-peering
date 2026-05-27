@@ -1,0 +1,32 @@
+!
+{%- for ipv4_prefix in ipv4_prefixes %}
+  {%- if ipv4_prefix.route_on_rs == true %}
+ip prefix-list pl4-ANNOUNCE_TO_RS seq {{ loop.index * 5 }} permit {{ ipv4_prefix.prefix }}
+  {%- endif %}
+{%- endfor %}
+!
+{%- for ipv6_prefix in ipv6_prefixes %}
+  {%- if ipv6_prefix.route_on_rs == true %}
+ipv6 prefix-list pl6-ANNOUNCE_TO_RS seq {{ loop.index * 5 }} permit {{ ipv6_prefix.prefix }}
+  {%- endif %}
+{%- endfor %}
+!
+router bgp {{ asn }}
+ no bgp enforce-first-as
+ neighbor 37.49.236.250 remote-as 51706
+ neighbor 37.49.236.250 description FRIXPARIS_RS1_51706_V4
+ neighbor 2001:7f8:54::250 remote-as 51706
+ neighbor 2001:7f8:54::250 description FRIXPARIS_RS1_51706_V6
+ address-family ipv4 unicast
+  neighbor 37.49.236.250 activate
+  neighbor 37.49.236.250 route-map rm4-ANNOUNCE_TO_RS out
+ address-family ipv6 unicast
+  neighbor 2001:7f8:54::250 activate
+  neighbor 2001:7f8:54::250 route-map rm6-ANNOUNCE_TO_RS out
+!
+route-map rm4-ANNOUNCE_TO_RS permit 10
+ match ip address prefix-list pl4-ANNOUNCE_TO_RS
+!
+route-map rm6-ANNOUNCE_TO_RS permit 10
+ match ipv6 address prefix-list pl6-ANNOUNCE_TO_RS
+!

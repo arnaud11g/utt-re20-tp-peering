@@ -1,0 +1,7 @@
+!
+{%- for interface in interfaces %}
+interface {{ interface.name }}
+ ip address {{ interface.ipv4_address }} 255.255.255.255
+ ipv6 address {{ interface.ipv6_address }}/128
+{%- endfor %}
+!

@@ -1,0 +1,17 @@
+!
+router bgp {{ asn }}
+ neighbor 172.16.{{ id }}.100 remote-as {{ asn }} 
+ neighbor 172.16.{{ id }}.100 update-source Loopback0
+ neighbor 2001:db8::{{ id }}:100 remote-as {{ asn }} 
+ neighbor 2001:db8::{{ id }}:100 update-source Loopback0
+ address-family ipv4 unicast 
+{%- for ipv4_prefix in ipv4_prefixes %}
+  network {{ ipv4_prefix.network }} mask {{ ipv4_prefix.v4_mask }}
+{%- endfor %}
+  neighbor 172.16.{{ id }}.100 activate
+ address-family ipv6 unicast
+{%- for ipv6_prefix in ipv6_prefixes %}
+  network {{ ipv6_prefix.prefix }}
+{%- endfor %}
+  neighbor 2001:db8::{{ id }}:100 activate
+!

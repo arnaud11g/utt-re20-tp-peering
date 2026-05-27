@@ -1,0 +1,686 @@
+{
+    "networks": [
+        {
+            "id": 1,
+            "name": "OVHcloud",
+            "name_slug": "ovhcloud",
+            "asn": "16276",
+            "isis_id": "49.0001.6276.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "5.196.0.0/16",
+                    "network": "5.196.0.0",
+                    "v4_mask": "255.255.0.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "37.59.0.0/16",
+                    "network": "37.59.0.0",
+                    "v4_mask": "255.255.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2001:41d0::/32",
+                    "network": "2001:41d0::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2402:1f00::/32",
+                    "network": "2402:1f00::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-ovhcloud",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "5.196.0.1",
+                            "ipv6_address": "2001:41d0::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "37.59.0.1",
+                            "ipv6_address": "2402:1f00::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-ovhcloud", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.236.100",
+                            "ipv6_address": "2001:7f8:54::100"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Scaleway",
+            "name_slug": "scaleway",
+            "asn": "12876",
+            "isis_id": "49.0001.2876.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "51.15.0.0/16",
+                    "network": "51.15.0.0",
+                    "v4_mask": "255.255.0.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "62.4.0.0/19",
+                    "network": "62.4.0.0",
+                    "v4_mask": "255.255.224.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2001:bc8::/32",
+                    "network": "2001:bc8::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2001:67c:26d8::/48",
+                    "network": "2001:67c:26d8::",
+                    "v6_cidr": "/48",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-scaleway",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "51.15.0.1",
+                            "ipv6_address": "2001:bc8::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "62.4.0.1",
+                            "ipv6_address": "2001:67c:26d8::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-scaleway", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.237.27",
+                            "ipv6_address": "2001:7f8:54::1:27"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Free SAS",
+            "name_slug": "freesas",
+            "asn": "12322",
+            "isis_id": "49.0001.2322.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "62.147.0.0/16",
+                    "network": "62.147.0.0",
+                    "v4_mask": "255.255.0.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "82.64.0.0/14",
+                    "network": "82.64.0.0",
+                    "v4_mask": "255.252.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2a01:e00::/32",
+                    "network": "2a01:e00::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2a01:e01::/32",
+                    "network": "2a01:e01::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-freesas",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "62.147.0.1",
+                            "ipv6_address": "2a01:e00::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "82.64.0.1",
+                            "ipv6_address": "2a01:e01::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-freesas", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.238.63",
+                            "ipv6_address": "2001:7f8:54::2:63"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Bouygues",
+            "name_slug": "bouygues",
+            "asn": "5410",
+            "isis_id": "49.0000.5410.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "31.32.0.0/13",
+                    "network": "31.32.0.0",
+                    "v4_mask": "255.248.0.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "128.78.0.0/15",
+                    "network": "128.78.0.0",
+                    "v4_mask": "255.254.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2001:860::/29",
+                    "network": "2001:860::",
+                    "v6_cidr": "/29",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2a04:cec0::/29",
+                    "network": "2a04:cec0::",
+                    "v6_cidr": "/29",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-bouygues",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "31.32.0.1",
+                            "ipv6_address": "2001:860::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "128.78.0.1",
+                            "ipv6_address": "2a04:cec0::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-bouygues", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.236.63",
+                            "ipv6_address": "2001:7f8:54::63"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Akamai",
+            "name_slug": "akamai",
+            "asn": "20940",
+            "isis_id": "49.0002.0940.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "2.16.0.0/13",
+                    "network": "2.16.0.0",
+                    "v4_mask": "255.248.0.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "92.122.0.0/15",
+                    "network": "92.122.0.0",
+                    "v4_mask": "255.254.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2600:1400::/24",
+                    "network": "2600:1400::",
+                    "v6_cidr": "/24",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2a02:26f0::/32",
+                    "network": "2a02:26f0::",
+                    "v6_cidr":"/32",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-akamai",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "2.16.0.1",
+                            "ipv6_address": "2600:1400::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "92.122.0.1",
+                            "ipv6_address": "2a02:26f0::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-akamai", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.236.168",
+                            "ipv6_address": "2001:7f8:54::168"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Fastly",
+            "name_slug": "fastly",
+            "asn": "54113",
+            "isis_id": "49.0005.4113.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "146.75.0.0/17",
+                    "network": "146.75.0.0",
+                    "v4_mask": "255.255.128.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "185.31.16.0/22",
+                    "network": "185.31.16.0",
+                    "v4_mask": "255.255.252.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2620:11a:c000::/40",
+                    "network": "2620:11a:c000::",
+                    "v6_cidr": "/40",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2a04:4e40::/29",
+                    "network": "2a04:4e40::",
+                    "v6_cidr": "/29",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-fastly",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "146.75.0.1",
+                            "ipv6_address": "2620:11a:c000::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "185.31.16.1",
+                            "ipv6_address": "2a04:4e40::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-fastly", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.238.76",
+                            "ipv6_address": "2001:7f8:54::2:76"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Microsoft",
+            "name_slug": "microsoft",
+            "asn": "8075",
+            "isis_id": "49.0000.8075.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "1.186.0.0/16",
+                    "network": "1.186.0.0",
+                    "v4_mask": "255.255.0.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "172.128.0.0/11",
+                    "network": "172.128.0.0",
+                    "v4_mask": "255.224.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2001:4898::/31",
+                    "network": "2001:4898::",
+                    "v6_cidr": "/31",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2603:1000::/24",
+                    "network": "2603:1000::",
+                    "v6_cidr":"/24",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-microsoft",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "1.186.0.1",
+                            "ipv6_address": "2001:4898::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "172.128.0.1",
+                            "ipv6_address": "2603:1000::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-microsoft", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.236.5",
+                            "ipv6_address": "2001:7f8:54::5"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Apple",
+            "name_slug": "apple",
+            "asn": "714",
+            "isis_id": "49.0000.0714.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "17.0.0.0/8",
+                    "network": "17.0.0.0",
+                    "v4_mask": "255.0.0.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "57.112.0.0/12",
+                    "network": "57.112.0.0",
+                    "v4_mask": "255.240.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2a01:b747::/32",
+                    "network": "2a01:b747::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2620:149::/32",
+                    "network": "2620:149::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-apple",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "17.0.0.1",
+                            "ipv6_address": "2a01:b747::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "57.112.0.1",
+                            "ipv6_address": "2620:149::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-apple", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.237.176",
+                            "ipv6_address": "2001:7f8:54::1:176"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Amazon",
+            "name_slug": "amazon",
+            "asn": "16509",
+            "isis_id": "49.0001.6509.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "3.0.0.0/10",
+                    "network": "3.0.0.0",
+                    "v4_mask": "255.192.0.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "34.192.0.0/10",
+                    "network": "34.192.0.0",
+                    "v4_mask": "255.192.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2a13:88c0::/29",
+                    "network": "2a13:88c0::",
+                    "v6_cidr": "/29",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2001:67c:e0c::/48",
+                    "network": "2001:67c:e0c::",
+                    "v6_cidr": "/48",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-amazon",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "3.0.0.1",
+                            "ipv6_address": "2a13:88c0::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "34.192.0.1",
+                            "ipv6_address": "2001:67c:e0c::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-amazon", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.236.118",
+                            "ipv6_address": "2001:7f8:54::118"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Cloudflare",
+            "name_slug": "cloudflare",
+            "asn": "13335",
+            "isis_id": "49.0001.3335.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "1.1.1.0/24",
+                    "network": "1.1.1.0",
+                    "v4_mask": "255.255.255.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "92.8.0.0/15",
+                    "network": "92.8.0.0",
+                    "v4_mask": "255.254.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2606:4700::/32",
+                    "network": "2606:4700::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2606:54c0::/28",
+                    "network": "2606:54c0::",
+                    "v6_cidr": "/28",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-cloudflare",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "1.1.1.1",
+                            "ipv6_address": "2606:4700::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "92.8.0.1",
+                            "ipv6_address": "2606:54c0::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-cloudflare", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.237.49",
+                            "ipv6_address": "2001:7f8:54::1:49"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Google",
+            "name_slug": "google",
+            "asn": "15169",
+            "isis_id": "49.0001.5169.00",
+            "ipv4_prefixes": [
+                { 
+                    "prefix": "8.8.8.0/24",
+                    "network": "8.8.8.0",
+                    "v4_mask": "255.255.255.0",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "142.250.0.0/15",
+                    "network": "142.250.0.0",
+                    "v4_mask": "255.254.0.0",
+                    "route_on_rs": false
+                }
+            ],
+            "ipv6_prefixes": [
+                {
+                    "prefix": "2001:4860::/32",
+                    "network": "2001:4860::",
+                    "v6_cidr": "/32",
+                    "route_on_rs": true
+                },
+                {
+                    "prefix": "2604:31c0::/32",
+                    "network": "2604:31c0::/32",
+                    "v6_cidr": "/32",
+                    "route_on_rs": false
+                }                
+            ],
+            "devices": [
+                {
+                    "name": "c9300-google",
+                    "interfaces": [
+                        {
+                            "name": "Loopback33",
+                            "ipv4_address": "8.8.8.8",
+                            "ipv6_address": "2001:4860::1"
+                        },
+                        {
+                            "name": "Loopback66",
+                            "ipv4_address": "142.250.0.1",
+                            "ipv6_address": "2604:31c0::1"
+                        }
+                    ]
+                },
+                {
+                    "name": "c8200-google", 
+                    "interfaces": [
+                        {
+                            "name": "GigabitEthernet0/0/0",
+                            "ipv4_address": "37.49.236.2",
+                            "ipv6_address": "2001:7f8:54::2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

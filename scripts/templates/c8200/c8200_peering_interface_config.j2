@@ -1,0 +1,9 @@
+!
+{%- for interface in interfaces %}
+interface {{ interface.name }}
+ ip address {{ interface.ipv4_address }} 255.255.252.0
+ ipv6 address {{ interface.ipv6_address }}/64
+ ipv6 enable
+ no shutdown
+{%- endfor %}
+!
