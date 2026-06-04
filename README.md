@@ -42,6 +42,8 @@ Un autre couple routeur-switch servira à simuler l'IXP : le switch servira à f
 
 ![infra globale](images/re20_tp_peering_infra-globale.png)
 
+![répartition équipements](images/re20_tp_peering_répartition_équipements.png)
+
 
 ## ASN et préfixes IP par binôme 
 
