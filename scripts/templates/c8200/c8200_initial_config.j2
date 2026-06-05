@@ -21,6 +21,6 @@ interface GigabitEthernet0/0/1
  no shutdown
 !
 router isis 1 
- net {{ isis_id }}
+ net {{ isis_id_prefix }}.0001.00
  is-type level-2-only
 !
