@@ -93,6 +93,8 @@ Une fois la configuration appliquée sur chaque équipement, vérifiez les élé
 
 Ensuite, nous allons ajouter deux autres interfaces "Loopback" qui serviront à modéliser des "clients" au sein de votre réseau. Nous allons configurer sur ces interfaces des adresses IP appartenant aux préfixes IP publics de l'acteur d'Internet que vous représentez. Pour réaliser cela, prenez le template `c9300_loopbacks_config_{id}.cfg`.
 
+Ensuite, il va falloir mettre en place la redistribution de routes en interne dans votre réseau. Pour cela, appliquez les templates de configuration `c8200_ibgp_config_{id}.cfg` et `c9300_ibgp_config_{id}.cfg`. Cela permettra votre routeur C8200 d'apprendre vos routes internes qui sont émises par votre switch C9300.
+
 
 ### Partie 2 - Peering via route-server 
 

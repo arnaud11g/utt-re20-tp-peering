@@ -41,12 +41,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "5.196.0.1",
-                            "ipv6_address": "2001:41d0::1"
+                            "ipv4_mask": "255.255.0.0",
+                            "ipv6_address": "2001:41d0::1",
+                            "ipv6_cidr": "/32"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "37.59.0.1",
-                            "ipv6_address": "2402:1f00::1"
+                            "ipv4_mask": "255.255.0.0",
+                            "ipv6_address": "2402:1f00::1",
+                            "ipv6_cidr": "/32"
                         }
                     ]
                 },
@@ -103,12 +107,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "51.15.0.1",
-                            "ipv6_address": "2001:bc8::1"
+                            "ipv4_mask": "255.255.0.0",
+                            "ipv6_address": "2001:bc8::1",
+                            "ipv6_cidr": "/32"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "62.4.0.1",
-                            "ipv6_address": "2001:67c:26d8::1"
+                            "ipv4_mask": "255.255.224.0",
+                            "ipv6_address": "2001:67c:26d8::1",
+                            "ipv6_cidr": "/48"
                         }
                     ]
                 },
@@ -165,12 +173,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "62.147.0.1",
-                            "ipv6_address": "2a01:e00::1"
+                            "ipv4_mask":"255.255.0.0",
+                            "ipv6_address": "2a01:e00::1",
+                            "ipv6_cidr": "/32"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "82.64.0.1",
-                            "ipv6_address": "2a01:e01::1"
+                            "ipv4_mask": "255.252.0.0",
+                            "ipv6_address": "2a01:e01::1",
+                            "ipv6_cidr": "/32"
                         }
                     ]
                 },
@@ -227,12 +239,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "31.32.0.1",
-                            "ipv6_address": "2001:860::1"
+                            "ipv4_mask": "255.248.0.0",
+                            "ipv6_address": "2001:860::1",
+                            "ipv6_cidr": "/29"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "128.78.0.1",
-                            "ipv6_address": "2a04:cec0::1"
+                            "ipv4_mask": "255.254.0.0",
+                            "ipv6_address": "2a04:cec0::1",
+                            "ipv6_cidr": "/29"
                         }
                     ]
                 },
@@ -289,12 +305,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "2.16.0.1",
-                            "ipv6_address": "2600:1400::1"
+                            "ipv4_mask": "255.248.0.0",
+                            "ipv6_address": "2600:1400::1",
+                            "ipv6_cidr":"/32"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "92.122.0.1",
-                            "ipv6_address": "2a02:26f0::1"
+                            "ipv4_mask": "255.254.0.0",
+                            "ipv6_address": "2a02:26f0::1",
+                            "ipv6_cidr": "/32"
                         }
                     ]
                 },
@@ -351,12 +371,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "146.75.0.1",
-                            "ipv6_address": "2620:11a:c000::1"
+                            "ipv4_mask": "255.255.128.0",
+                            "ipv6_address": "2620:11a:c000::1",
+                            "ipv6_cidr": "/40"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "185.31.16.1",
-                            "ipv6_address": "2a04:4e40::1"
+                            "ipv4_mask": "255.255.252.0",
+                            "ipv6_address": "2a04:4e40::1",
+                            "ipv6_cidr": "/29"
                         }
                     ]
                 },
@@ -413,12 +437,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "1.186.0.1",
-                            "ipv6_address": "2001:4898::1"
+                            "ipv4_mask": "255.255.0.0",
+                            "ipv6_address": "2001:4898::1",
+                            "ipv6_cidr": "/31"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "172.128.0.1",
-                            "ipv6_address": "2603:1000::1"
+                            "ipv4_mask": "255.224.0.0",
+                            "ipv6_address": "2603:1000::1",
+                            "ipv6_cidr": "/24"
                         }
                     ]
                 },
@@ -475,12 +503,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "17.0.0.1",
-                            "ipv6_address": "2a01:b747::1"
+                            "ipv4_mask": "255.0.0.0",
+                            "ipv6_address": "2a01:b747::1",
+                            "ipv6_cidr": "/32"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "57.112.0.1",
-                            "ipv6_address": "2620:149::1"
+                            "ipv4_mask": "255.240.0.0",
+                            "ipv6_address": "2620:149::1",
+                            "ipv6_cidr": "/32"
                         }
                     ]
                 },
@@ -537,12 +569,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "3.0.0.1",
-                            "ipv6_address": "2a13:88c0::1"
+                            "ipv4_mask": "255.192.0.0",
+                            "ipv6_address": "2a13:88c0::1",
+                            "ipv6_cidr": "/29"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "34.192.0.1",
-                            "ipv6_address": "2001:67c:e0c::1"
+                            "ipv4_mask": "255.192.0.0",
+                            "ipv6_address": "2001:67c:e0c::1",
+                            "ipv6_cidr": "/32"
                         }
                     ]
                 },
@@ -599,12 +635,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "1.1.1.1",
-                            "ipv6_address": "2606:4700::1"
+                            "ipv4_mask": "255.255.255.0",
+                            "ipv6_address": "2606:4700::1",
+                            "ipv6_cidr": "/32"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "92.8.0.1",
-                            "ipv6_address": "2606:54c0::1"
+                            "ipv4_mask": "255.254.0.0",
+                            "ipv6_address": "2606:54c0::1",
+                            "ipv6_cidr": "/28"
                         }
                     ]
                 },
@@ -661,12 +701,16 @@
                         {
                             "name": "Loopback33",
                             "ipv4_address": "8.8.8.8",
-                            "ipv6_address": "2001:4860::1"
+                            "ipv4_mask": "255.255.0.0",
+                            "ipv6_address": "2001:4860::1",
+                            "ipv6_cidr": "/32"
                         },
                         {
                             "name": "Loopback66",
                             "ipv4_address": "142.250.0.1",
-                            "ipv6_address": "2604:31c0::1"
+                            "ipv4_mask": "255.254.0.0",
+                            "ipv6_address": "2604:31c0::1",
+                            "ipv6_cidr": "/32"
                         }
                     ]
                 },
