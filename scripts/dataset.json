@@ -5,7 +5,7 @@
             "name": "OVHcloud",
             "name_slug": "ovhcloud",
             "asn": "16276",
-            "isis_id": "49.0001.6276.00",
+            "isis_id": "49.0001.6276.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "5.196.0.0/16",
@@ -67,7 +67,7 @@
             "name": "Scaleway",
             "name_slug": "scaleway",
             "asn": "12876",
-            "isis_id": "49.0001.2876.00",
+            "isis_id": "49.0001.2876.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "51.15.0.0/16",
@@ -129,7 +129,7 @@
             "name": "Free SAS",
             "name_slug": "freesas",
             "asn": "12322",
-            "isis_id": "49.0001.2322.00",
+            "isis_id": "49.0001.2322.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "62.147.0.0/16",
@@ -191,7 +191,7 @@
             "name": "Bouygues",
             "name_slug": "bouygues",
             "asn": "5410",
-            "isis_id": "49.0000.5410.00",
+            "isis_id": "49.0000.5410.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "31.32.0.0/13",
@@ -253,7 +253,7 @@
             "name": "Akamai",
             "name_slug": "akamai",
             "asn": "20940",
-            "isis_id": "49.0002.0940.00",
+            "isis_id": "49.0002.0940.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "2.16.0.0/13",
@@ -315,7 +315,7 @@
             "name": "Fastly",
             "name_slug": "fastly",
             "asn": "54113",
-            "isis_id": "49.0005.4113.00",
+            "isis_id": "49.0005.4113.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "146.75.0.0/17",
@@ -377,7 +377,7 @@
             "name": "Microsoft",
             "name_slug": "microsoft",
             "asn": "8075",
-            "isis_id": "49.0000.8075.00",
+            "isis_id": "49.0000.8075.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "1.186.0.0/16",
@@ -439,7 +439,7 @@
             "name": "Apple",
             "name_slug": "apple",
             "asn": "714",
-            "isis_id": "49.0000.0714.00",
+            "isis_id": "49.0000.0714.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "17.0.0.0/8",
@@ -501,7 +501,7 @@
             "name": "Amazon",
             "name_slug": "amazon",
             "asn": "16509",
-            "isis_id": "49.0001.6509.00",
+            "isis_id": "49.0001.6509.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "3.0.0.0/10",
@@ -563,7 +563,7 @@
             "name": "Cloudflare",
             "name_slug": "cloudflare",
             "asn": "13335",
-            "isis_id": "49.0001.3335.00",
+            "isis_id": "49.0001.3335.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "1.1.1.0/24",
@@ -625,7 +625,7 @@
             "name": "Google",
             "name_slug": "google",
             "asn": "15169",
-            "isis_id": "49.0001.5169.00",
+            "isis_id": "49.0001.5169.0000.0000.00",
             "ipv4_prefixes": [
                 { 
                     "prefix": "8.8.8.0/24",
